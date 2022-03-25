@@ -1,0 +1,182 @@
+/* Tyylit */
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+/* Värit */
+:root {
+    --teksti: #333333;
+    --tausta: #eeeeee;
+    --teksti-vaalea: #dddddd;
+    --bg-dark: #444444;
+    --highlight: #a5bd39;
+    --taulukko-reuna: #335b2c;
+    --taulukko-vaalea: #d1e08c;
+}
+
+/* En tiedä mitä tekee, mutta en uskalla ottaa poiskaan */
+* {
+    box-sizing: border-box;
+}
+
+/* Yleiskäyttöisiä tyylejä */
+
+/* Vertikaalinen keskittäminen */
+
+/*
+.v-center {
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+}
+*/
+
+/* Horisonttaalinen oikea tasaus */
+
+/*
+.h-right {
+    position: absolute;
+    right: 0px;
+}
+*/
+
+/* Itvelhot */
+.highlight {
+    padding-left: 8px;
+    color: var(--highlight);
+    display: inline-block;
+    transform: rotate(6.5deg);
+    font-weight: bold;
+}
+
+.highlight2 {
+    color: var(--teksti-vaalea);
+    display: inline-block;
+    transform: rotate(-8deg);
+    padding-right: 10px;
+    font-weight: 600;
+}
+
+/* nav (header alunperin) ja logo */
+nav {
+    background-color: var(--bg-dark);
+    color: var(--teksti-vaalea);
+    padding-left: 15px;
+    padding-right: 15px;
+    position: fixed;
+    width: 100%;
+    
+    border-bottom: var(--highlight) solid 5px;
+}
+
+nav .logo {
+    font-size: 1.4em;
+}
+
+.logo img {
+    height: 30px;
+    width: 25px;
+    display: block;
+    float: left;
+    transform: translateY(25%) rotate(-30deg);
+}
+
+nav nav a {
+    display: inline-block;
+    font-size: 1.5em;
+    color: var(--teksti-vaalea);
+    text-decoration: none;
+    padding: 0.5em;
+}
+
+nav a:hover {
+    color: var(--teksti);
+    background-color: var(--highlight);
+}
+
+
+/* div (fontti) */
+div {
+    font-family: 'Lato', sans-serif;
+    
+}
+
+div p {
+    color: var(--teksti);
+}
+
+div h1,
+div h2,
+div h3,
+div h4 {
+    font-weight: bold;
+    color: var(--teksti);
+}
+
+/* body */
+body {
+    background-color: var(--tausta);
+    color: var(--teksti);
+}
+
+
+/* Ammattitaitovaatimukset (se lista) */
+.taitovaatimukset {
+    padding: 0;
+
+}
+
+.taitovaatimukset > li {
+    list-style-type: none;
+    
+}
+
+.taitovaatimukset > li > ul {
+    border-left: var(--highlight) solid 5px;
+    
+}
+
+.taitovaatimukset > li > ul li {
+    padding: 0;
+    list-style-type: square;
+}
+
+/* main-lohkon tyylit */
+main {
+    font-size: 1.5em;
+    line-height: 1.5em;
+    padding-top: 20px;
+}
+
+/* section-lohkon tyylit */
+section {
+    max-width: 1100px;
+    width: 70%;
+    margin: 20px auto;
+}
+
+/* Taulukko */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table th, td {
+    text-align: left;
+    padding: 8px;
+    border: 8px inset var(--taulukko-reuna);
+}
+
+tr:nth-child(even){background-color: var(--taulukko-vaalea)}
+
+th {
+    background-color: var(--highlight);
+    color: var(--teksti);
+} 
+
+/* Footer */
+footer {
+    background-color: var(--bg-dark);
+    color: var(--teksti-vaalea);
+    padding: 40px 0;
+    text-align: center;
+    font-size: 1.2em;
+}
